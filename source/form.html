@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="img/logotype-mobile.svg" alt="pink">
+    </a>
+    <nav class="main-nav">
+
+      <button class="main-nav__toggle" type="button"><img src="http://placehold.it/150x100" alt="закрыть"></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="competition.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">HTML Academy</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__login" href="login.html">Войти</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="form-main">
+    <h2 class="form-main__intro">Конкурс на самое<br>
+    безбашенное<br>
+  путешествие с Пинк</h2>
+  <section class="form-main__name">
+    <h2 class="visually-hidden">Ваши данные</h2>
+    <p class="form-main__text">
+      Поделитесь своей историей и получите<br>
+      шанс выиграть ценный приз -- 1000<br>
+      миль на вашу бонусную карту!
+      </p>
+      <form action="https://echo.htmlacademy.ru" method="post" class="form-main__form1">
+        <p>
+          <label for="second-name">ФАМИЛИЯ:</label>
+          <input id="second-name" type="text" name="second_name" placeholder="Укажите Фамилию*">
+        </p>
+        <p>
+          <label for="first-name">ИМЯ:</label>
+          <input id="first-name" type="text" name="first-name" placeholder="Введите ваше имя*">
+        </p>
+        <p>
+          <label for="third-name">Текст письма:</label>
+          <input id="third-name" type="text" name="third-name" placeholder="Ну и отчество тоже">
+        </p>
+      </form>
+    </section>
+    <section class="form-main__check check">
+      <h3 class="check__text">ВАШИ БЕЗБАШЕННЫЕ<br>
+      ДОСТИЖЕНИЯ В ПУТЕШЕСТВИИ</h3>
+      <form action="https://echo.htmlacademy.ru" method="post" class="form-main__form2">
+        <ul class="check__list">
+          <li><input id="selfi" type="checkbox" name="selfi" checked><label for="selfi">Сделал селфи с акулой</label></li>
+          <li><input id="beach" type="checkbox" name="beach" checked><label for="beach">Обгорел на пляже</label></li>
+          <li><input id="chuck-norris" type="checkbox" name="chuck-norris"><label for="chuck-norris">Видел Чака Норриса</label></li>
+          <li><input id="bought-stuff" type="checkbox" name="bought-stuff"><label for="bought-stuff">Накупил сувениров</label></li>
+          <li><input id="hold-tower" type="checkbox" name="hold-tower" checked><label for="hold-tower">Удержал башню</label></li>
+          <li><input id="hotel" type="checkbox" name="hotel"><label for="hotel">Разгромил отель</label></li>
+        </ul>
+        </form>
+      </section>
+      <section class="form-main__phone-email">
+        <h2 class="visually-hidden">Ваши номер телефона и почта</h2>
+        <form action="https://echo.htmlacademy.ru" method="post" class="form-main__form3">
+          <p>
+            <label for="phone">НОМЕР ТЕЛЕФОНА:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="Номер, пожалуйста">
+          </p>
+          <p>
+            <label for="email">АДРЕС ПОЧТЫ:</label>
+            <input type="email" id="email" name="email" placeholder="Введите почту*">
+          </p>
+        </section>
+        <section class="form-main__os os">
+          <h3 class="os__text">С КАКИМ ПРИЛОЖЕНИЕМ
+          ПУТЕШЕСТВОВАЛИ?</h3>
+          <form action="https://echo.htmlacademy.ru" method="post" class="form-main__form4">
+            <ul class="os__list">
+              <li><input id="ios" type="checkbox" name="ios" checked><label for="ios">Pink для iOS</label></li>
+              <li><input id="android" type="checkbox" name="android"><label for="android">Pink на Android</label></li>
+              <li><input id="windows" type="checkbox" name="windows"><label for="windows">Windows Phone</label></li>
+            </ul>
+            </form>
+          </section>
+          <section class="form-main__comment comment-emotions">
+            <h3 class="comment-emotions__text">ОПИШИТЕ СВОИ ЭМОЦИИ</h3>
+            <form action="https://echo.htmlacademy.ru" method="post" class="form-main__form5">
+            <p>
+              <label for="emotions"></label>
+              <textarea id="emotions" name="emotions" placeholder="Можно прям в красках, не
+              стесняйтесь в выражениях"></textarea>
+            </p>
+            <button type="submit">ОТПРАВИТЬ ФОРМУ</button>
+            </form>
+            </section>
+            <div class="form-main__important-info important-info">
+              <p class="important-info">
+                -- ОБЯЗАТЕЛЬНЫЕ ПОЛЯ
+                </p>
+            </div>
+    </main>
+    <footer class="footer-other">
+      <a href="index.html" class="footer-other__logo">
+        <img src="http://placehold.it/150x100" alt="логотип приложения">
+      </a>
+      <ul class="footer-other__list">
+        <li class="footer-other__social-networks">
+          <!--Названия как заглушки-->
+          твиттер
+        </li>
+        <li class="footer-other__social-networks">
+          фейсбук
+        </li>
+        <li class="footer-other__social-networks">
+          ютуб
+        </li>
+      </ul>
+      <p class="footer-other__developer">
+        Разработано <a href="https://htmlacademy.ru/" class="footer-other__developer__logo">
+          <img src="http://placehold.it/150x100" alt="логотип приложения">
+        </a>
+      </p>
+    </footer>
+  </body>
+
+  </html>
