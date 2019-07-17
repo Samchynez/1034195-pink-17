@@ -162,22 +162,33 @@
     <section class="editor">
       <h2 class="visually-hidden">Попробуйте сами добавить фото</h2>
       <img src="http://placehold.it/150x100" alt="ваше фото">
+      <div class="editor__tools">
+        <button class="editor__tool" type="button">1</button>
+        <button class="editor__tool" type="button">2</button>
+        <button class="editor__tool" type="button">3</button>
+        <form action="https://echo.htmlacademy.ru" method="post" class="editor__form">
+          <input type="range" min="0" max="100" step="1" value="50">
+        </form>
+      </div>
+      <div class="main-button">
+        <button class="editor__button" type="button">Запостить</button>
+        <button class="editor__button editor__button--active" type="button">Отмена</button>
+      </div>
     </section>
   </main>
-  <footer class="footerr">
+  <footer class="footer">
     <a href="index.html" class="footer__logo">
       <img src="http://placehold.it/150x100" alt="логотип приложения">
     </a>
-    <ul class="footer__list">
-      <li class="footeк__social-networks">
-        <!--Названия как заглушки-->
-        твиттер
+    <ul class="footer__list socials">
+      <li class="socials__item">
+        <a href="#" class="socials__link"></a>
       </li>
-      <li class="footer__social-networks">
-        фейсбук
+      <li class="socials__item">
+        <a href="#" class="socials__link"></a>
       </li>
-      <li class="footer__social-networks">
-        ютуб
+      <li class="socials__item">
+        <a href="#" class="socials__link"></a>
       </li>
     </ul>
     <p class="footer__developer copyright">
