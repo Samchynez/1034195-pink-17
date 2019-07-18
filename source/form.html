@@ -36,101 +36,107 @@
     <div class="page-intro">
       <h2 class="form-page__tittle">Конкурс на самое безбашенное путешествие с Пинк</h2>
     </div>
-    <section class="form-main__name">
-      <h2 class="visually-hidden">Ваши данные</h2>
-      <p class="form-page__text">
-        Поделитесь своей историей и получите
-        шанс выиграть ценный приз -- 1000
-        миль на вашу бонусную карту!
-      </p>
-      <form action="https://echo.htmlacademy.ru" method="post" class="form-main__form1">
+    <p class="form-page__text intro-text">
+      Поделитесь своей историей и получите
+      шанс выиграть ценный приз -- 1000
+      миль на вашу бонусную карту!
+    </p>
+    <form action="https://echo.htmlacademy.ru" method="post" class="form-page__form main-form">
+      <fieldset class="main-form__1">
         <p>
-          <label for="second-name">ФАМИЛИЯ:</label>
-          <input id="second-name" type="text" name="second_name" placeholder="Укажите Фамилию*">
+          <label class="main-form__text" for="first-stoke">ФАМИЛИЯ:</label>
+          <input id="first-stoke" type="text" name="second_name" placeholder="Укажите Фамилию*">
         </p>
         <p>
-          <label for="first-name">ИМЯ:</label>
-          <input id="first-name" type="text" name="first-name" placeholder="Введите ваше имя*">
+          <label class="main-form__text" for="second-stroke">ИМЯ:</label>
+          <input id="second-stroke" type="text" name="first-name" placeholder="Введите ваше имя*">
         </p>
         <p>
-          <label for="third-name">Текст письма:</label>
-          <input id="third-name" type="text" name="third-name" placeholder="Ну и отчество тоже">
+          <label class="main-form__text" for="third-stroke">ОТЧЕСТВО:</label>
+          <input id="third-stroke" type="text" name="third-name" placeholder="Ну и отчество тоже">
         </p>
-      </form>
-    </section>
-    <section class="form-main__check check">
-      <h3 class="check__text">ВАШИ БЕЗБАШЕННЫЕ
-        ДОСТИЖЕНИЯ В ПУТЕШЕСТВИИ</h3>
-      <form action="https://echo.htmlacademy.ru" method="post" class="form-main__form2">
-        <ul class="check__list">
-          <li><input id="selfi" type="checkbox" name="selfi" checked><label for="selfi">Сделал селфи с акулой</label></li>
-          <li><input id="beach" type="checkbox" name="beach" checked><label for="beach">Обгорел на пляже</label></li>
-          <li><input id="chuck-norris" type="checkbox" name="chuck-norris"><label for="chuck-norris">Видел Чака Норриса</label></li>
-          <li><input id="bought-stuff" type="checkbox" name="bought-stuff"><label for="bought-stuff">Накупил сувениров</label></li>
-          <li><input id="hold-tower" type="checkbox" name="hold-tower" checked><label for="hold-tower">Удержал башню</label></li>
-          <li><input id="hotel" type="checkbox" name="hotel"><label for="hotel">Разгромил отель</label></li>
+      </fieldset>
+      <fieldset class="main-form__2">
+        <legend class="main-form__text">
+          ВАШИ БЕЗБАШЕННЫЕ ДОСТИЖЕНИЯ В ПУТЕШЕСТВИИ
+        </legend>
+        <ul class="main-form__list-1">
+          <li class="main-form__item">
+            <input id="selfi" type="checkbox" name="selfi" checked><label for="selfi">Сделал селфи с акулой</label>
+          </li>
+          <li class="main-form__item">
+            <input id="beach" type="checkbox" name="beach" checked><label for="beach">Обгорел на пляже</label>
+          </li>
+          <li class="main-form__item">
+            <input id="chuck-norris" type="checkbox" name="chuck-norris"><label for="chuck-norris">Видел Чака Норриса</label>
+          </li>
+          <li class="main-form__item">
+            <input id="bought-stuff" type="checkbox" name="bought-stuff"><label for="bought-stuff">Накупил сувениров</label>
+          </li>
+          <li class="main-form__item">
+            <input id="hold-tower" type="checkbox" name="hold-tower" checked><label for="hold-tower">Удержал башню</label>
+          </li>
+          <li class="main-form__item">
+            <input id="hotel" type="checkbox" name="hotel"><label for="hotel">Разгромил отель</label>
+          </li>
         </ul>
-      </form>
-    </section>
-    <section class="form-main__phone-email">
-      <h2 class="visually-hidden">Ваши номер телефона и почта</h2>
-      <form action="https://echo.htmlacademy.ru" method="post" class="form-main__form3">
+      </fieldset>
+      <fieldset class="main-form__3">
         <p>
-          <label for="phone">НОМЕР ТЕЛЕФОНА:</label>
+          <label class="main-form__text" for="phone">НОМЕР ТЕЛЕФОНА:</label>
           <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="Номер, пожалуйста">
         </p>
         <p>
-          <label for="email">АДРЕС ПОЧТЫ:</label>
+          <label class="main-form__text" for="email">АДРЕС ПОЧТЫ:</label>
           <input type="email" id="email" name="email" placeholder="Введите почту*">
         </p>
-      </form>
-    </section>
-    <section class="form-main__os os">
-      <h3 class="os__text">С КАКИМ ПРИЛОЖЕНИЕМ
-        ПУТЕШЕСТВОВАЛИ?</h3>
-      <form action="https://echo.htmlacademy.ru" method="post" class="form-main__form4">
-        <ul class="os__list">
-          <li><input id="ios" type="checkbox" name="ios" checked><label for="ios">Pink для iOS</label></li>
-          <li><input id="android" type="checkbox" name="android"><label for="android">Pink на Android</label></li>
-          <li><input id="windows" type="checkbox" name="windows"><label for="windows">Windows Phone</label></li>
+      </fieldset>
+      <fieldset class="main-form__4">
+        <legend class="main-form__text">С КАКИМ ПРИЛОЖЕНИЕМ ПУТЕШЕСТВОВАЛИ?</legend>
+        <ul class="main-form__list-2 list-2">
+          <li>
+            <input id="ios" type="checkbox" name="ios" checked><label class="list-2__item" for="ios">Pink для iOS</label>
+          </li>
+          <li>
+            <input id="android" type="checkbox" name="android"><label class="list-2__item" for="android">Pink на Android</label>
+          </li>
+          <li>
+            <input id="windows" type="checkbox" name="windows"><label class="list-2__item" for="windows">Windows Phone</label>
+          </li>
         </ul>
-      </form>
-    </section>
-    <section class="form-main__comment comment-emotions">
-      <h3 class="comment-emotions__text">ОПИШИТЕ СВОИ ЭМОЦИИ</h3>
-      <form action="https://echo.htmlacademy.ru" method="post" class="form-main__form5">
-        <p>
-          <label for="emotions"></label>
-          <textarea id="emotions" name="emotions" placeholder="Можно прям в красках, не
-              стесняйтесь в выражениях"></textarea>
-        </p>
-        <button type="submit">ОТПРАВИТЬ ФОРМУ</button>
-      </form>
-    </section>
-    <div class="form-main__important-info important-info">
-      <p class="important-info">
+      </fieldset>
+      <fieldset class="main-form__5">
+        <legend class="main-form__text">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
+        <label for="emotions"></label>
+        <textarea id="emotions" name="emotions" placeholder="Можно прям в красках, не стесняйтесь в выражениях"></textarea>
+      </fieldset>
+      <div class="main-button">
+        <button class="main-form__button" type="submit">ОТПРАВИТЬ ФОРМУ</button>
+      </div>
+    </form>
+    <div class="form-page__detail">
+      <p class="form-page__subtext">
         -- ОБЯЗАТЕЛЬНЫЕ ПОЛЯ
       </p>
     </div>
   </main>
-  <footer class="footer-other">
-    <a href="index.html" class="footer-other__logo">
+  <footer class="footer">
+    <a href="index.html" class="footer__logo">
       <img src="http://placehold.it/150x100" alt="логотип приложения">
     </a>
-    <ul class="footer-other__list">
-      <li class="footer-other__social-networks">
-        <!--Названия как заглушки-->
-        твиттер
+    <ul class="footer__list socials">
+      <li class="socials__item">
+        <a href="#" class="socials__link"></a>
       </li>
-      <li class="footer-other__social-networks">
-        фейсбук
+      <li class="socials__item">
+        <a href="#" class="socials__link"></a>
       </li>
-      <li class="footer-other__social-networks">
-        ютуб
+      <li class="socials__item">
+        <a href="#" class="socials__link"></a>
       </li>
     </ul>
-    <p class="footer-other__developer">
-      Разработано <a href="https://htmlacademy.ru/" class="footer-other__developer__logo">
+    <p class="footer__developer copyright">
+      Разработано <a href="https://htmlacademy.ru/" class="copyright__logo">
         <img src="http://placehold.it/150x100" alt="логотип приложения">
       </a>
     </p>
